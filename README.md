@@ -19,6 +19,7 @@ React, Vite, JavaScript, Tailwind CSS, Node.js, Express, Gemini API, dotenv, and
 .gitignore
 client/
   index.html
+  .env.example         Local API URL template
   vite.config.js       Local API proxy and React plugin
   tailwind.config.js
   postcss.config.js
@@ -37,7 +38,7 @@ README.md
 
 ## Environment setup
 
-In `server/.env`, add your Gemini API key from Google AI Studio. The file is ignored by Git.
+In `server/.env`, add your Gemini API key from Google AI Studio. The file is ignored by Git. `client/.env` points local development at the backend on port 5000 and is also ignored by Git.
 
 ```env
 GEMINI_API_KEY=your_google_ai_studio_api_key_here
